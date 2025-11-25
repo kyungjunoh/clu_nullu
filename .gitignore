@@ -27,7 +27,35 @@ output/
 eval/
 eval_tool/
 data/
+datasets/
+coco_panoptic/
+videos/
+i2slab/
+labeled_features/
 
 
 .DS_Store
 .vscode/
+
+# 실험 결과, 로그, 체크포인트
+output/
+log_and_checkpoint/
+lost+found/
+w_outputs/
+
+# 환경, 툴
+urp_jwl_env/
+__MACOSX/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# 딥러닝 모델 파일/체크포인트
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.pkl
+*.npz

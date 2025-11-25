@@ -1,12 +1,3 @@
-# Nullu: Mitigating Object Hallucinations in Large Vision-Language Models via HalluSpace Projection
-Le Yang*, Ziwei Zheng*, Boxu Chen, Zhengyu Zhao, Chenhao Lin, Chao Shen. 
-*equal contribution. 
-
-XJTU AISEC Team.
-
-This repository contains the official code of Nullu, a method for mitigating object hallucinations in LVLMs via HalluSpace Projection.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-g.svg)](https://opensource.org/licenses/MIT) [![Arxiv](https://img.shields.io/badge/Paper-Arxiv-red)](http://arxiv.org/abs/2412.13817)
 
 ## Overview
 <div align="center">
@@ -124,40 +115,3 @@ python scripts/llavabench_gpt_eval.py --raw_answer_path [PATH_TO_RAW_MODEL_RESPO
 ```
 GPT-4V evaluated responses will be saved under `eval/llavabench/results/` as `.log` file.
 
-## Experiments
-- **Nullu mitigates the object hallucination issue across different LVLM families.**
-<p align="center">
-  <img src="figs/table12.png" alt="exp1" style="max-width: 60%; height: auto;">
-</p>
-
-*table 12. Results on POPE. Original denotes direct sampling for LVLMs, whereas Nullu refers to edit the model with the proposed method.*
-
-- **Results in general LVLM benchmarks, highlighting its wide-ranging applicability.**
-<p align="center">
-  <img src="figs/figure5.png" alt="exp2" style="max-width: 60%; height: auto;">
-</p>
-
-*figure 5. MME full set results on LLaVA-1.5. From the results we see that Nullu leads to consistent improvements of LVLM in both perception tasks and recognition capacities.*
-<p align="center" width="80%">
-    <img src="figs/table4.png" alt="GPT4V aided evaluation" style="width: 50%; min-width: 200px; display: block; margin: auto;"></a>
-</p>
-
-*table 4. Results of GPT-4V-aided evaluation on LLaVA-Bench following the setting in [VCD](https://arxiv.org/abs/2311.16922). Both metrics are on a scale of 10.*
-
-- **Please refer to [our paper](http://arxiv.org/abs/2412.13817) for detailed experimental results.**
-
-### Citation
-If you find this work useful or use our codes in your own research, please use the following bibtex:
-```
-@inproceedings{yang2025nullu,
-  title={Nullu: Mitigating Object Hallucinations in Large Vision-Language Models via HalluSpace Projection},
-  author={Yang, Le and Zheng, Ziwei and Chen, Boxu and Zhao, Zhengyu and Lin, Chenhao and Shen, Chao},
-  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-  year={2025}
-}
-```
-
-
-## Acknowledgement
-This repository builds upon the contributions of [ProFS](https://arxiv.org/abs/2405.13967), [LLaVA 1.5](https://github.com/haotian-liu/LLaVA), [mPLUG_Owl2](https://github.com/X-PLUG/mPLUG-Owl/tree/main/mPLUG-Owl2), [MiniGPT-4](https://minigpt-4.github.io/.
-). Thanks for their awesome works.
